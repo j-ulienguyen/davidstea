@@ -1,0 +1,376 @@
+/**************************************************
+                      GENERAL
+***************************************************/
+@import url('https://fonts.googleapis.com/css?family=Lora:700|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,500');
+
+:root {
+    /* Color Variables */
+    --main-teal-color: #04B2B1;
+    --dark-teal-color: #009f9d;
+}
+
+* {
+    /* Reset box-sizing for all elements */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#app {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/**************************************************
+                    TYPOGRAPHY
+***************************************************/
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lora', serif;
+}
+
+button {
+    font-family: 'Oswald', sans-serif;
+    font-size: 12pt;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+}
+
+.heading--fade {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    color: #f3f3f3;
+
+    position: relative;
+    top: 5.5%;
+    z-index: -99;
+}
+
+.heading--fill {
+   color: var(--dark-teal-color);
+   text-transform: lowercase;
+
+   margin-bottom: 1.5%; 
+}
+
+#btn-info {
+    font-size: 11pt;
+}
+
+#product-nav {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: right;
+    letter-spacing: 0.05rem;
+    color: white;
+}
+
+
+/**************************************************
+                    BACKGROUND
+***************************************************/
+.bg {
+    background-color: var(--main-teal-color);
+}
+
+.bg--dark {
+    width: 65vw;
+    height: 100vh;
+    background-color: var(--dark-teal-color);
+
+    position: fixed;
+    right: -100vw;
+
+    transition: right 3s;
+}
+
+#logo {
+    /* width: 10%;
+    height: auto;
+
+    position: fixed;
+    top: 5.5vh;
+    left: 20vw; */
+    width: 50%;
+    height: auto;
+
+    position: fixed;
+    top: 41vh;
+    left: 25vw;
+
+    transition: top 3s, left 3s, width 3s;
+}
+
+
+/**************************************************
+                   MAIN INFO BOX
+***************************************************/
+#info-box {
+    display: flex;
+    flex-direction: row;
+    
+    width: 75vw;
+    height: 60vh;
+    background-color: white;
+    
+    position: fixed;
+    top: -70vh;
+    left: 20vw;
+
+    overflow: hidden;
+    box-shadow: 10px 10px 6px rgb(0, 150, 150);
+
+    transition: top 3s;
+}
+
+#info-container {
+    /* border: 1px solid black; */
+    padding-top: 2%;
+}
+
+#info-indent {
+    margin-left: 3em;
+    width: 85%;
+    max-width: 100%;
+
+    position: relative;
+}
+
+#product-description {
+    margin-bottom: 4%;
+}
+
+#btn-info {
+    /* border: 1px solid black; */
+    padding-top: 1em;
+}
+
+#ingredients-info,
+#instructions-info,
+#taste-info {
+    display: none;
+}
+
+#image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    flex: 1;
+}
+
+#main-image {
+    /* border: 1px solid black; */
+    width: 25rem;
+    height: 20rem;
+    margin-bottom: 1.5rem;
+    
+    text-align: center;
+}
+
+#main-image img {
+    height: 100%;
+    width: 100%;
+}
+
+#thumbnails {
+    border: 1px solid rgb(224, 224, 224);
+    width: 7rem;
+    height: 7rem;
+
+    margin-top: 5%;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+#thumbnails img {
+    height: 100%;
+    width: 100%;
+}
+
+#info-container {
+    flex: 2;
+    /* background-color: lightgreen; */
+}
+
+#arrow-btn-container {
+    display: inline-block;
+    position: absolute;
+    bottom: 5%;
+    right: 2%;
+}
+
+.taste-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 50px;
+    height: 50px;
+
+    transition: left 2s, top 2s;
+}
+
+
+/**************************************************
+                      BUTTONS
+***************************************************/
+.btn {
+    width: 10em;
+    height: 2em;
+    border: none;
+    background-color: rgb(238, 238, 238);
+}
+
+.btn:hover {
+    background-color: var(--main-teal-color);
+    color: white;
+    transition: background-color 0.75s;   
+}
+
+.btn--active {
+    background-color: var(--main-teal-color);
+    color: white;
+}
+
+#ingredients-btn,
+#instructions-btn,
+#taste-btn {
+    display: none;
+}
+
+.arrow-box {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 3rem;
+    height: 3rem;
+    border: none;
+
+    background-color: white;
+    box-shadow: 2px 2px 3px rgb(212, 212, 212);
+}
+
+.arrow-box:hover {
+    border: 1.5px solid var(--main-teal-color);
+    box-shadow: none;
+}
+
+.arrow-box .fas {
+    /* Arrow Icons */
+    font-size: 1.5rem;
+    color: var(--main-teal-color);
+}
+
+
+/**************************************************
+           PRODUCT MENU / NAV - CONTAINER
+***************************************************/
+#product-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    position: fixed;
+    bottom: 0;
+    left: 28vw;
+
+    width: 67%;
+    /* background-color: blue; */
+}
+
+
+/**************************************************
+                    PRODUCT MENU
+***************************************************/
+.product-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    
+    width: 60vw;
+    height: 12vh;
+    background-color: white;
+
+    position: relative;
+    bottom: -25vh;
+    /* left: 35vw; */
+
+    transition: bottom 3s;
+}
+
+.product-menu__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    flex: 1;
+
+    position: relative;
+    bottom: 3.5vh;
+}
+
+.product-menu__item:hover {
+    bottom: 6vh;
+    transition: bottom 0.5s;
+}
+
+.product-menu__item:hover:after {
+    /* Shadow underneath product */
+    content: '';
+    position: absolute;
+    bottom: -10%;
+    left: 30%;
+    width: 40%;
+    height: 5%;
+    border-radius: 50%;
+    box-shadow: 0px 10px 5px rgb(212, 212, 212);
+}
+
+
+/**************************************************
+                   PRODUCT NAV
+***************************************************/
+#product-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 1em;
+
+    position: relative;
+    bottom: -25vh;
+
+    transition: bottom 3s;
+}
+
+.product-nav__item {
+    opacity: 0.6;
+
+    transition: opacity 0.5s;
+}
+
+.product-nav__item:hover {
+    opacity: 1;
+}
+
+.product-nav__item--active {
+    opacity: 1;
+}

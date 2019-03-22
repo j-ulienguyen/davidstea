@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120.8 125">
+    <defs>
+        <style>
+            .cls-1 {
+                fill: #58a840;
+            }
+
+            .cls-2 {
+                fill: #4c9137;
+            }
+
+            .cls-3 {
+                fill: #dc2e3f;
+            }
+
+            .cls-4 {
+                fill: #dc4655;
+            }
+
+            .cls-5 {
+                fill: #cf2b3b;
+            }
+        </style>
+    </defs>
+    <title>berry</title>
+    <g id="Layer_2" data-name="Layer 2">
+        <g id="Layer_19" data-name="Layer 19">
+            <g id="Berry">
+                <ellipse class="cls-1" cx="30.63" cy="59.54" rx="17.11" ry="35.23" transform="translate(-36.27 56.76) rotate(-60.4)" />
+                <ellipse class="cls-2" cx="39.5" cy="49.24" rx="17.11" ry="35.23" transform="translate(-21.98 34.92) rotate(-38.15)" />
+                <ellipse class="cls-1" cx="73.25" cy="41.3" rx="43.25" ry="21" transform="translate(12.06 98.99) rotate(-72.73)" />
+                <ellipse class="cls-2" cx="90.33" cy="51.38" rx="43.25" ry="21" transform="translate(-9.26 81.06) rotate(-46.22)" />
+                <path class="cls-3" d="M82.49,46.25a30.23,30.23,0,1,1-42.75-1.44A30.09,30.09,0,0,1,82.49,46.25Z" />
+                <path class="cls-4" d="M82.49,46.25a30.09,30.09,0,0,1,8,17.45,30.24,30.24,0,0,1-59.39-4.21A30.23,30.23,0,0,1,82.49,46.25Z" />
+                <ellipse class="cls-5" cx="54.92" cy="64.67" rx="3.75" ry="5.31" transform="translate(-12.87 13.65) rotate(-12.7)" />
+                <path class="cls-3" d="M105.3,83.58A27.85,27.85,0,1,1,67.42,72.84,27.75,27.75,0,0,1,105.3,83.58Z" />
+                <path class="cls-4" d="M105.3,83.58a27.75,27.75,0,0,1,3.27,17.36A27.84,27.84,0,0,1,56.43,84a27.56,27.56,0,0,1,11-11.19A27.84,27.84,0,0,1,105.3,83.58Z" />
+                <ellipse class="cls-5" cx="76.54" cy="96.04" rx="3.45" ry="4.89" transform="translate(-46.25 97.76) rotate(-52.25)" />
+                <path class="cls-3" d="M58,97A27.86,27.86,0,1,1,30.15,69.12,27.69,27.69,0,0,1,58,97Z" />
+                <path class="cls-4" d="M58,97a27.69,27.69,0,0,1-5.61,16.75A27.85,27.85,0,0,1,15.1,73.53,27.86,27.86,0,0,1,58,97Z" />
+                <ellipse class="cls-5" cx="26.81" cy="93.82" rx="3.45" ry="4.89" transform="translate(-34.64 18.03) rotate(-23.09)" />
+            </g>
+        </g>
+    </g>
+</svg>
